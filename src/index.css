@@ -1,0 +1,91 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply bg-gray-100;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-neutral;
+  }
+}
+
+@layer components {
+  .btn-primary {
+    @apply px-4 py-2 bg-primary text-white rounded-md hover:bg-primary-light 
+           focus:outline-none focus:ring-2 focus:ring-primary focus:ring-opacity-50 
+           disabled:opacity-50 disabled:cursor-not-allowed transition-colors;
+  }
+
+  .btn-secondary {
+    @apply px-4 py-2 bg-secondary text-white rounded-md hover:bg-secondary-light 
+           focus:outline-none focus:ring-2 focus:ring-secondary focus:ring-opacity-50 
+           disabled:opacity-50 disabled:cursor-not-allowed transition-colors;
+  }
+
+  .btn-neutral {
+    @apply px-4 py-2 bg-neutral text-white rounded-md hover:bg-neutral-light 
+           focus:outline-none focus:ring-2 focus:ring-neutral focus:ring-opacity-50 
+           disabled:opacity-50 disabled:cursor-not-allowed transition-colors;
+  }
+
+  .btn-outline-primary {
+    @apply px-4 py-2 border-2 border-primary text-primary rounded-md 
+           hover:bg-primary hover:text-white focus:outline-none focus:ring-2 
+           focus:ring-primary focus:ring-opacity-50 disabled:opacity-50 
+           disabled:cursor-not-allowed transition-colors;
+  }
+
+  .btn-outline-secondary {
+    @apply px-4 py-2 border-2 border-secondary text-secondary rounded-md 
+           hover:bg-secondary hover:text-white focus:outline-none focus:ring-2 
+           focus:ring-secondary focus:ring-opacity-50 disabled:opacity-50 
+           disabled:cursor-not-allowed transition-colors;
+  }
+
+  .btn-outline-neutral {
+    @apply px-4 py-2 border-2 border-neutral text-neutral rounded-md 
+           hover:bg-neutral hover:text-white focus:outline-none focus:ring-2 
+           focus:ring-neutral focus:ring-opacity-50 disabled:opacity-50 
+           disabled:cursor-not-allowed transition-colors;
+  }
+
+  .btn-danger {
+    @apply px-4 py-2 bg-red-600 text-white rounded-md hover:bg-red-700 
+           focus:outline-none focus:ring-2 focus:ring-red-500 focus:ring-opacity-50 
+           disabled:opacity-50 disabled:cursor-not-allowed transition-colors;
+  }
+
+  .btn-success {
+    @apply px-4 py-2 bg-green-600 text-white rounded-md hover:bg-green-700 
+           focus:outline-none focus:ring-2 focus:ring-green-500 focus:ring-opacity-50 
+           disabled:opacity-50 disabled:cursor-not-allowed transition-colors;
+  }
+
+  .card {
+    @apply bg-white shadow-md rounded-lg p-6;
+  }
+
+  .input-field {
+    @apply mt-1 block w-full rounded-md border-gray-300 shadow-sm 
+           focus:border-secondary focus:ring focus:ring-secondary focus:ring-opacity-50;
+  }
+
+  .badge {
+    @apply inline-flex items-center px-2.5 py-0.5 rounded-full text-xs font-medium;
+  }
+
+  .badge-primary {
+    @apply bg-primary-light/10 text-primary;
+  }
+
+  .badge-secondary {
+    @apply bg-secondary-light/10 text-secondary;
+  }
+
+  .badge-neutral {
+    @apply bg-neutral-light/10 text-neutral;
+  }
+}
